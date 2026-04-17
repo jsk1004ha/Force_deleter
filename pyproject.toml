@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "force-delete-win"
+version = "1.0.0"
+description = "Pure-Python force delete for files/folders on Windows 10/11"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Force_deleter maintainers" }]
+keywords = ["windows", "delete", "force", "file", "folder"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Operating System :: Microsoft :: Windows",
+  "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+force-delete-win = "force_delete_win.cli:main"
+
+[tool.setuptools]
+packages = ["force_delete_win"]
+
